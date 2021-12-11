@@ -1,24 +1,49 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+import {useState} from 'react'; 
+import Login from './components/Login';
+import Header from './components/Header';
+import Home from './components/Home';
+import Register from './components/Register';
+import ProductListing from './components/ProductListing';
+import ProductDetails from './components/ProductDetails';
+import AddProduct from './components/AddProduct';
+import About from './components/About';
+import Backdrop from './components/Backdrop';
+import SideDrawer from './components/SideDrawer';
+import CartPage from './components/CartPage';
+import UserAddress from './components/UserAddress';
+import EditUserDetails from './components/EditUserDetails';
+
 
 function App() {
+  const[sideToggle,setSideToggle] = useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   
+     <BrowserRouter>
+     <Header click={()=> setSideToggle(true)} />
+     <SideDrawer show={sideToggle} click={()=>setSideToggle(false)}/>
+     <Backdrop show={sideToggle} click={()=>setSideToggle(false)} />
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/register" element={<Register />}/>
+      <Route path="/login" element={<Login />}/>
+      <Route path="/about" element={<About/>}/>
+      {/* <Route path="/edit" element={<EditUserDetails/>}/> */}
+      <Route path="/address/:user" element={<UserAddress/>}/>
+      <Route path="/api/products" element={<ProductListing />}/>
+      <Route path="/api/addproduct" element={<AddProduct />}/>
+      <Route path="/api/product/:id" element={<ProductDetails />}/>
+      <Route path="/cart" element={<CartPage/>}/>
+      <Route>404 Not Found</Route>
+    </Routes>
+  </BrowserRouter>
+  </>
   );
 }
 
