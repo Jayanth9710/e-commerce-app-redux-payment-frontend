@@ -1,0 +1,35 @@
+.signin__container{
+    height: 100vh;
+background-color:#e4c6ab ;
+color: black;
+}
+.signin__title{
+    width: 300px;
+    height: 470px;
+    padding: 20px;
+    background-color: #e4c6ab;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.signin__buttons{
+    background-color: #017d87;
+    color: white;
+    padding: 10px 17px;
+    border:1px solid #171717;
+    cursor: pointer;
+    width: 100%; 
+    border-radius: 5px;
+}
+
+.signin__buttons:hover{
+    color: black;
+}

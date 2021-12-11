@@ -15,6 +15,7 @@ function ProductListing() {
     dispatch(listProducts());
   }, [dispatch]);
   return (
+    <div className="products__page">
     <div className="product__listing">
       <h2 className="title">Latest Prodcuts</h2>
     <div className="products">
@@ -27,6 +28,7 @@ function ProductListing() {
           <ProductComponent key={product._id} productId={product._id} name={product.productName} price={product.price} description={product.description} files={product.files} />)
         
       )}
+    </div>
     </div>
     </div>
   );

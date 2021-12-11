@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,700&display=swap');
+
 .product__listing{
     max-width: 1300px;
     margin: 1rem auto;
 }
+.products__page{
+    background-color:#e4c6ab ;
+    margin-top: 0 !important;
+}
 .title{
     font-size: 1.5rem;
-    color: #171717;
+    color: #964545;
     margin-bottom: 1rem; 
-    margin-left: 8px;
+    margin-left: 8px; 
+    font-family: 'Noto Sans', sans-serif;
 }
 .products{
     display: grid;

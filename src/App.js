@@ -18,6 +18,8 @@ import SideDrawer from './components/SideDrawer';
 import CartPage from './components/CartPage';
 import UserAddress from './components/UserAddress';
 import EditUserDetails from './components/EditUserDetails';
+import UserLogin from './components/userLogin';
+import UserRegister from './components/userRegister';
 
 
 function App() {
@@ -31,8 +33,8 @@ function App() {
      <Backdrop show={sideToggle} click={()=>setSideToggle(false)} />
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/register" element={<Register />}/>
-      <Route path="/login" element={<Login />}/>
+      <Route path="/register" element={<UserRegister />}/>
+      <Route path="/login" element={<UserLogin />}/>
       <Route path="/about" element={<About/>}/>
       {/* <Route path="/edit" element={<EditUserDetails/>}/> */}
       <Route path="/address/:user" element={<UserAddress/>}/>

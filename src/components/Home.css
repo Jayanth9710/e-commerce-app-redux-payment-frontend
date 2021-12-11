@@ -1,0 +1,59 @@
+.test__container{
+    height: 100vh;
+background-color:#e4c6ab ;
+color: white;
+}
+.test__Button{
+    background-color: #017d87;
+    color: white;
+    padding: 10px 17px;
+    border:1px solid #171717;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.test__Button:hover{
+  color: black;
+  text-decoration: none;
+}
+.test__inner_container > div{
+  margin: 5px;
+}
+.test__inner_container{
+  width: 200px;
+  height: 300px;
+  padding: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  margin: auto;
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+}
+.test__logoutContainer{
+    width: 200px;
+  height: 300px;
+  padding: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  background-color:#e4c6ab ;
+}
+.test__logoutScreen{
+    height: 100vh;
+background-color:#e4c6ab ;
+color: white;
+}
