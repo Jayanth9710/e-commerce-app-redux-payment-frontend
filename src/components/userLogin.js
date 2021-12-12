@@ -27,7 +27,7 @@ function UserLogin() {
             setLoading(false)
             setFailure(false);
             window.alert("Successful Sign-in!")
-            navigate('/')
+            navigate('/api/products')
         } catch (error) {
             console.log(error)
             setLoading(false)

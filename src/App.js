@@ -20,6 +20,7 @@ import UserAddress from './components/UserAddress';
 import EditUserDetails from './components/EditUserDetails';
 import UserLogin from './components/userLogin';
 import UserRegister from './components/userRegister';
+import ManageAccount from './components/ManageAccount';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
       <Route path="/login" element={<UserLogin />}/>
       <Route path="/about" element={<About/>}/>
       {/* <Route path="/edit" element={<EditUserDetails/>}/> */}
+      <Route path="/account" element={<ManageAccount/>}/>
       <Route path="/address/:user" element={<UserAddress/>}/>
       <Route path="/api/products" element={<ProductListing />}/>
       <Route path="/api/addproduct" element={<AddProduct />}/>

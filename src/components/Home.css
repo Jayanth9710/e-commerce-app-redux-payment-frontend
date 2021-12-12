@@ -3,6 +3,14 @@
 background-color:#e4c6ab ;
 color: white;
 }
+.homePage__left{
+  background-color:#e4c6ab
+}
+.homePage__left__pic{
+  height: 455px;
+  width: 1520px;
+
+}
 .test__Button{
     background-color: #017d87;
     color: white;
@@ -22,19 +30,25 @@ color: white;
 .test__inner_container > div{
   margin: 5px;
 }
+.test__heading{
+  display: flex;
+  font-size: 66px;
+  color: #718879;
+}
 .test__inner_container{
-  width: 200px;
-  height: 300px;
+  width: 500px;
+  height: 360px;
   padding: 20px;
-  top: 0;
+  top: 150px;
   bottom: 0;
-  left: 0;
-  right:0;
-  margin: auto;
+  /* left: 0; */
+  right:100px;
+  /* margin: auto; */
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
   position: absolute;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .test__logoutContainer{
     width: 200px;
