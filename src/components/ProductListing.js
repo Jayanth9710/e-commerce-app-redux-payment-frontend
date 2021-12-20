@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { getProducts as listProducts } from "../redux/actions/productActions";
 import './ProductListing.css'
 
+
 function ProductListing() {
   const dispatch = useDispatch();
 
