@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import './ProductComponent.css'
+import env from '../settings'
 
 const ProductComponent =({files,name,price,description,productId,countInStock})=> {
    
@@ -9,7 +10,7 @@ const ProductComponent =({files,name,price,description,productId,countInStock})=
         <div className="product__card"  >
           
             {files.map((file,index)=>(
-            <img key={"id"} src={`http://localhost:4000/${file.filePath}`} alt={name}/>))}
+            <img key={"id"} src={`${env.api}/${file.filePath}`} alt={name}/>))}
           
     
     <div className="product__info">

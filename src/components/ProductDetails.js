@@ -6,6 +6,7 @@ import {useParams,useNavigate} from 'react-router-dom'
 //Actions 
 import { getProductDetails } from '../redux/actions/productActions';
 import { addToCart } from '../redux/actions/cartActions'
+import env from '../settings'
 
 const ProductDetails = () => {
     const [qty, setQty] = useState(1);
@@ -34,10 +35,10 @@ const addToCartHandler = () => {
             {loading ? <h2>Loading...</h2> : error ? <h2>{error}</h2> : (
                 <>
                 <div className='product__details__left'>
-                {/* <div className='productImage'>
+                <div className='productImage'>
                 { singleProduct.files.map((e,index)=>(
-            <img className='productImage'  src={`http://localhost:4000/${e.filePath}`} alt={singleProduct.name}/>))}
-                </div> */}
+            <img className='productImage'  src={`${env.api}/${e.filePath}`} alt={singleProduct.name}/>))}
+                </div>
                 <div className='left__info'>
                     <p className='left__name'>{singleProduct.productName}</p>
                     <p>Price: &#8377; {singleProduct.price}</p>
