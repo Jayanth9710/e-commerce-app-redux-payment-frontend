@@ -9,7 +9,7 @@ const ProductComponent =({files,name,price,description,productId,countInStock})=
         <div className="product__card"  >
           
             {files.map((file,index)=>(
-            <img  src={`http://localhost:4000/${file.filePath}`} alt={name}/>))}
+            <img key={"id"} src={`http://localhost:4000/${file.filePath}`} alt={name}/>))}
           
     
     <div className="product__info">

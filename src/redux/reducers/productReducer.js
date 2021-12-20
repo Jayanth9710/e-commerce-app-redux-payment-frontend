@@ -25,7 +25,7 @@ export const getProductReducer = (state={products:[]},action)=> {
     }
 }
 
-export const getProductDetailsReducer = (state={product:{}},action)=> {
+export const getProductDetailsReducer = (state={singleProduct:{}},action)=> {
     switch (action.type) {
         case ActionTypes.GET_PRODUCT_DETAILS_REQUEST:
             return {
@@ -35,7 +35,7 @@ export const getProductDetailsReducer = (state={product:{}},action)=> {
             case ActionTypes.GET_PRODUCT_DETAILS_SUCCESS:
                 return {
                     loading:false,
-                product:action.payload
+                singleProduct:action.payload
                 }
 
             case ActionTypes.GET_PRODUCT_DETAILS_FAIL:
@@ -45,7 +45,7 @@ export const getProductDetailsReducer = (state={product:{}},action)=> {
                 }
             case ActionTypes.GET_PRODUCT_DETAILS_RESET:
                 return {
-                    product:{}
+                    singleProduct:{}
                 }
         default:
             return state;
