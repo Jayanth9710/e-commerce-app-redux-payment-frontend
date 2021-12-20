@@ -1,6 +1,6 @@
 import { CartActionTypes } from "../constants/cartconstants"; 
 import axios from 'axios';
-import env from "../settings";
+import env from "../../settings";
 
 export const addToCart = (id,qty) => async (dispatch,getState)=> {
     const {data} = await axios.get(`${env.api}/api/product/${id}`);

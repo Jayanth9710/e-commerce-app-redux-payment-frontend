@@ -1,6 +1,6 @@
 import {ActionTypes} from '../constants/action-types';
 import axios from 'axios'
-import env from "../settings";
+import env from "../../settings";
 
 export const getProducts = () => async (dispatch) => {
     try {
