@@ -4,13 +4,13 @@ import './ProductComponent.css'
 import env from '../settings'
 
 const ProductComponent =({files,name,price,description,productId,countInStock})=> {
-   
+  const PF = "https://e-commerce-payment-redux.herokuapp.com/images/"
     return (
         <>
         <div className="product__card"  >
           
             {files.map((file,index)=>(
-            <img key={index} src={`${env.api}/${file.filePath}`} alt={name}/>))}
+            <img key={index} src={PF+e.filepath} alt={name}/>))}
           
     
     <div className="product__info">
