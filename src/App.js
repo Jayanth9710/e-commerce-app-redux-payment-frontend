@@ -33,12 +33,12 @@ function App() {
      <SideDrawer show={sideToggle} click={()=>setSideToggle(false)}/>
      <Backdrop show={sideToggle} click={()=>setSideToggle(false)} />
     <Routes>
-      <Route path="/" element={<Home/>}/>
+      <Route path="/" element={<ManageAccount/>}/>
       <Route path="/register" element={<UserRegister />}/>
       <Route path="/login" element={<UserLogin />}/>
       <Route path="/about" element={<About/>}/>
       {/* <Route path="/edit" element={<EditUserDetails/>}/> */}
-      <Route path="/account" element={<ManageAccount/>}/>
+      <Route path="/home" element={<Home/>}/>
       <Route path="/address/:user" element={<UserAddress/>}/>
       <Route path="/api/products" element={<ProductListing />}/>
       <Route path="/api/addproduct" element={<AddProduct />}/>

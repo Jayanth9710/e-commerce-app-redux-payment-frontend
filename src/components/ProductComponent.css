@@ -1,7 +1,9 @@
 .product__card{
     width: 300px;
+    border-radius: 15px;
     padding: 1rem;
-    background: #fff;
+    background: rgb(71, 63, 63);
+    color: white;
     box-shadow: 0 1px 4px rgba(0,0,0,0.4);
     margin: 8px auto;
     display: flex;

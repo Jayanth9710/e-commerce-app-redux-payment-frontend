@@ -42,7 +42,7 @@ function Header({click}) {
         </Link>
       </li>
       <li>
-        <Link to='/account' className='account'>
+        <Link to='/home' className='account'>
           <Tooltip title='Manage Account'>
           <div>
           <PermIdentityIcon />

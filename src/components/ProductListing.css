@@ -5,12 +5,12 @@
     margin: 1rem auto;
 }
 .products__page{
-    background-color:#e4c6ab ;
+    background-color:rgb(24, 66, 145) ;
     margin-top: 0 !important;
 }
 .title{
     font-size: 1.5rem;
-    color: #964545;
+    color: greenyellow;
     margin-bottom: 1rem; 
     margin-left: 8px; 
     font-family: 'Noto Sans', sans-serif;

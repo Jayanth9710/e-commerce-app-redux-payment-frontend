@@ -14,6 +14,24 @@
     background-color: transparent;
     padding: 1rem;
 }
+.link{
+    text-decoration: none;
+    background-color: rgb(39, 39, 168);
+  border: none;
+  color: greenyellow;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.link:hover{
+    text-decoration: none;
+    color: white;
+}
 
 .cartpage__right{
     flex:0.3;
