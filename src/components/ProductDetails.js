@@ -35,10 +35,10 @@ const addToCartHandler = () => {
             {loading ? <h2>Loading...</h2> : error ? <h2>{error}</h2> : (
                 <>
                 <div className='product__details__left'>
-                {/* <div className='productImage'>
+                <div className='productImage'>
                 { singleProduct.files.map((e,index)=>(
             <img className='productImage'  src={`${env.api}/${e.filePath}`} alt={singleProduct.name}/>))}
-                </div> */}
+                </div>
                 <div className='left__info'>
                     <p className='left__name'>{singleProduct.productName}</p>
                     <p>Price: &#8377; {singleProduct.price}</p>

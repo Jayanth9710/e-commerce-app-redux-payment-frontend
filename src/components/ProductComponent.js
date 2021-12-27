@@ -10,7 +10,7 @@ const ProductComponent =({files,name,price,description,productId,countInStock})=
         <div className="product__card"  >
           
             {files.map((file,index)=>(
-            <img key={"id"} src={`${env.api}/${file.filePath}`} alt={name}/>))}
+            <img key={index} src={`${env.api}/${file.filePath}`} alt={name}/>))}
           
     
     <div className="product__info">
