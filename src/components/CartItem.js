@@ -3,10 +3,12 @@ import './CartItem.css';
 import {Link} from 'react-router-dom'
 
 const CartItem = ({ item, qtyChangeHandler, removeFromCartHandler }) => {
+
+    const PF = "https://e-commerce-payment-redux.herokuapp.com/Uploads/"
     return (
         <div className='cartitem'>
             {item.files.map((file,index)=>(
-            <img  src={`http://localhost:4000/${file.filePath}`} alt={item.productName}/>))}
+            <img  src={PF+file.filepath} alt={item.productName}/>))}
             <Link to={`/product/${item.product}`} className='cartitem__name'>
         <p>{item.name}</p>
             </Link>
