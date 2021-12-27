@@ -4,7 +4,7 @@ import './ProductComponent.css'
 import env from '../settings'
 
 const ProductComponent =({files,name,price,description,productId,countInStock})=> {
-  const PF = "https://e-commerce-payment-redux.herokuapp.com/Uploads/"
+  const PF = "https://e-commerce-payment-redux.herokuapp.com"
     return (
         <>
         <div className="product__card"  >

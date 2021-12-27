@@ -30,7 +30,7 @@ const addToCartHandler = () => {
     navigate("/cart");
 }
 
-const PF = "https://e-commerce-payment-redux.herokuapp.com/Uploads/"
+const PF = "https://e-commerce-payment-redux.herokuapp.com"
 
     return (
         <div className='product__details'>
