@@ -30,6 +30,8 @@ const addToCartHandler = () => {
     navigate("/cart");
 }
 
+const PF = "https://e-commerce-payment-redux.herokuapp.com/images/"
+
     return (
         <div className='product__details'>
             {loading ? <h2>Loading...</h2> : error ? <h2>{error}</h2> : (
@@ -37,7 +39,7 @@ const addToCartHandler = () => {
                 <div className='product__details__left'>
                 <div className='productImage'>
                 { singleProduct.files.map((e,index)=>(
-            <img className='productImage'  src={`${env.api}/${e.filePath}`} alt={singleProduct.name}/>))}
+            <img className='productImage'  src={PF+e.filepath} alt={singleProduct.name}/>))}
                 </div>
                 <div className='left__info'>
                     <p className='left__name'>{singleProduct.productName}</p>
