@@ -8,7 +8,7 @@ const CartItem = ({ item, qtyChangeHandler, removeFromCartHandler }) => {
     return (
         <div className='cartitem'>
             {item.files.map((file,index)=>(
-            <img  src={PF + file.filepath} alt={item.productName}/>))}
+            <img  src={PF + file.filePath} alt={item.productName}/>))}
             <Link to={`/product/${item.product}`} className='cartitem__name'>
         <p>{item.name}</p>
             </Link>

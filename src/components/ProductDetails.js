@@ -39,7 +39,7 @@ const PF = "https://e-commerce-payment-redux.herokuapp.com/Uploads/"
                 <div className='product__details__left'>
                 <div className='productImage'>
                 { singleProduct.files.map((e,index)=>(
-            <img className='productImage'  src={PF + e.filepath} alt={singleProduct.name}/>))}
+            <img className='productImage'  src={PF + e.filePath} alt={singleProduct.name}/>))}
                 </div>
                 <div className='left__info'>
                     <p className='left__name'>{singleProduct.productName}</p>
