@@ -7,6 +7,8 @@ function ManageAccount() {
     const[currentUser,setCurrentUser] = useState(window.localStorage.getItem("user"));
     const handleLogout = async (e) =>{
         window.localStorage.removeItem("user");
+        window.localStorage.removeItem("role");
+        window.localStorage.removeItem("app_token");
         setCurrentUser();
       }
     return (

@@ -72,6 +72,17 @@ border-radius: 8px;
     cursor: pointer;
 }
 
+.admin-btn{
+    color: greenyellow;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.admin-btn:hover{
+    text-decoration: none;
+    color: greenyellow;
+}
 .hamburger__menu > div {
     width: 100%;
     height: 3px;

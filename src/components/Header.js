@@ -9,7 +9,7 @@ import { Tooltip } from '@mui/material';
 
 function Header({click}) {
     let navigate = useNavigate();
-
+  const role =  window.localStorage.getItem("role")
     const cart = useSelector(state => state.cart );
     const {cartItems} = cart;
 
@@ -58,6 +58,7 @@ function Header({click}) {
             <div></div>
             <div></div>
           </div>
+          {role === "admin" ? (<Link className='admin-btn' to='/api/addproduct'>Admin</Link>) : ("")}
         </nav>
     )
 }

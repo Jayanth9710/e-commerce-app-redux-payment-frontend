@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 const CartItem = ({ item, qtyChangeHandler, removeFromCartHandler }) => {
 
-    const PF = "https://e-commerce-payment-redux.herokuapp.com"
+    const PF = "https://e-commerce-payment-redux.herokuapp.com/"
     return (
         <div className='cartitem'>
             {item.files.map((file,index)=>(
