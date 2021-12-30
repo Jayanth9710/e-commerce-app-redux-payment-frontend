@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
 
-.navbar{
+.header{
     width: 100%;
     height: 110px;
-    background-color: rgb(24, 66, 145);
+    background-color: #4a4e69;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,29 +12,29 @@
     font-family: 'Rakkas', cursive;
 }
 
-.navbar__logo{
+.header__logo{
     color: greenyellow;
     font-size: 1.4rem;
     cursor: pointer;
 }
-.navbar__links{
+.header__links{
     display: flex;
     list-style: none;
     align-items: center;
 }
 
-.navbar__links > li{
+.header__links > li{
     padding-left: 1.5rem;
 }
 
-.navbar__links > li > a{
+.header__links > li > a{
     text-decoration: none;
     color: greenyellow;
     font-size: 1.2rem;
     display: flex;
     align-items: center;
 }
-.navbar__links > li > a > span {
+.header__links > li > a > span {
     display: flex;
     align-items: center;
     margin-left: 8px;
@@ -83,7 +83,7 @@ border-radius: 8px;
 }
 
 @media(max-width:960px) {
-    .navbar__links{ 
+    .header__links{ 
         display: none;
     }
 
@@ -93,7 +93,7 @@ border-radius: 8px;
 }
 
 @media(max-width:500px) {
-    .navbar__logo{
+    .header__logo{
         font-size: 1rem;
     }
 }

@@ -37,10 +37,10 @@ const PF = "https://e-commerce-payment-redux.herokuapp.com"
             {loading ? <h2>Loading...</h2> : error ? <h2>{error}</h2> : (
                 <>
                 <div className='product__details__left'>
-                <div className='productImage'>
+                {/* <div className='productImage'>
                 { singleProduct.files.map((e,index)=>(
             <img className='productImage'  src={PF + e.filePath} alt={singleProduct.name}/>))}
-                </div>
+                </div> */}
                 <div className='left__info'>
                     <p className='left__name'>{singleProduct.productName}</p>
                     <p>Price: &#8377; {singleProduct.price}</p>
@@ -53,7 +53,7 @@ const PF = "https://e-commerce-payment-redux.herokuapp.com"
                        Price : <span>&#8377; {singleProduct.price}</span>
                     </p>
                     <p>
-                        <span>{singleProduct.countInStock > 0 ? "In Stock" :"Out of Stock"}</span>
+                        <span>{singleProduct.countInStock > 0 ? <b>In Stock</b> :"Out of Stock"}</span>
                     </p>
                     <p>Qty
                         <select value={qty} onChange={(e) => setQty(e.target.value)}>
@@ -67,6 +67,7 @@ const PF = "https://e-commerce-payment-redux.herokuapp.com"
                     <p>
                         <button type='button' onClick={addToCartHandler}>Add to Cart</button>
                     </p>
+                    
                 </div>
             </div>
                 </>

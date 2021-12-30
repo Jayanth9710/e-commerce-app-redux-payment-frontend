@@ -5,10 +5,10 @@ import {
   Route
 } from "react-router-dom";
 import {useState} from 'react'; 
-import Login from './components/Login';
+import Login from './NewComponents/Login/Login';
 import Header from './components/Header';
 import Home from './components/Home';
-import Register from './components/Register';
+import Register from './NewComponents/Register/Register';
 import ProductListing from './components/ProductListing';
 import ProductDetails from './components/ProductDetails';
 import AddProduct from './components/AddProduct';
@@ -18,27 +18,26 @@ import SideDrawer from './components/SideDrawer';
 import CartPage from './components/CartPage';
 import UserAddress from './components/UserAddress';
 import EditUserDetails from './components/EditUserDetails';
-import UserLogin from './components/userLogin';
-import UserRegister from './components/userRegister';
 import ManageAccount from './components/ManageAccount';
 
 
 function App() {
-  const[sideToggle,setSideToggle] = useState(false)
+  // const[sideToggle,setSideToggle] = useState(false)
   return (
    <>
    
      <BrowserRouter>
-     <Header click={()=> setSideToggle(true)} />
-     <SideDrawer show={sideToggle} click={()=>setSideToggle(false)}/>
-     <Backdrop show={sideToggle} click={()=>setSideToggle(false)} />
+     <Header/>
+     {/* <SideDrawer show={sideToggle} click={()=>setSideToggle(false)}/>
+     <Backdrop show={sideToggle} click={()=>setSideToggle(false)} /> */}
     <Routes>
-      <Route path="/" element={<ManageAccount/>}/>
-      <Route path="/register" element={<UserRegister />}/>
-      <Route path="/login" element={<UserLogin />}/>
+      
+    <Route path="/" element={<Home/>}/>
+      <Route path="/account" element={<ManageAccount/>}/>
+      <Route path="/register" element={<Register />}/>
+      <Route path="/login" element={<Login />}/>
       <Route path="/about" element={<About/>}/>
       {/* <Route path="/edit" element={<EditUserDetails/>}/> */}
-      <Route path="/home" element={<Home/>}/>
       <Route path="/address/:user" element={<UserAddress/>}/>
       <Route path="/api/products" element={<ProductListing />}/>
       <Route path="/api/addproduct" element={<AddProduct />}/>

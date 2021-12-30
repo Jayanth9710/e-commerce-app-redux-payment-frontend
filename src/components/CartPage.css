@@ -35,13 +35,13 @@
 
 .cartpage__right{
     flex:0.3;
-    background: #fff;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    background: #eaac8b;
+    box-shadow: 0 1px 4px #355070;
     height: fit-content;
 }
 
 .cartpage__right div{
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 3px dashed #355070;;
     padding: 1rem;
 }
 
@@ -59,6 +59,7 @@
     background: #171717;
     color: #f4f4f4;
     border:1px solid #171717;
+    border-radius: 20px;
     cursor: pointer;
 }
 

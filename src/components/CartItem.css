@@ -5,9 +5,10 @@
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr 1fr ;
     gap: 8px;
-    background: #f4f4f4;
+    background: #eaac8b;
     border-radius: 2px;
     place-items: center;
+    border-radius: 15px;
 }
 
 .cartitem__name{

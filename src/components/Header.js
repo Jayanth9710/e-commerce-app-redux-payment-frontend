@@ -18,14 +18,14 @@ function Header({click}) {
     }
  
     return (
-        <nav className='navbar'>
-          <div className='navbar__logo'>
+        <nav className='header'>
+          <div className='header__logo'>
             <Link to='/' style={{ color: 'inherit', textDecoration: 'inherit'}}>
             Squish &#38; Mush
             </Link>
           </div>
 
-          <ul className='navbar__links'>
+          <ul className='header__links'>
       <li>
         <Link to='/cart' className='cart__link'>
           <i className='fas fa-shopping-cart'></i>
@@ -42,7 +42,7 @@ function Header({click}) {
         </Link>
       </li>
       <li>
-        <Link to='/home' className='account'>
+        <Link to='/account' className='account'>
           <Tooltip title='Manage Account'>
           <div>
           <PermIdentityIcon />

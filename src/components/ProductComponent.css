@@ -43,6 +43,30 @@
 background: yellow;
 }
 
+/* .product__img{
+    border-radius: 5px;
+} */
+
+.prod__card{
+    background-color: #c9ada7;
+    opacity: 0.6;
+    color: #22223b;
+}
+.prod__card:hover{
+    opacity: 1;
+}
+
+
+.card-footer{
+    background-color: #c9ada7 !important;
+    opacity: 0.6;
+    color: chocolate;
+}
+
+.card-footer:hover{
+    opacity: 1;
+}
+
 @media(max-width:1232px) {
     .product__card{
         width: 360px;

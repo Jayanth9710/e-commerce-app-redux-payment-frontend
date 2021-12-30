@@ -1,6 +1,6 @@
 .signup__page{
     height: 100vh;
-    background-color:#e4c6ab ;
+    background-color:#202833 ;
     color: white;
     }
     .signup__container{
@@ -17,10 +17,6 @@
         cursor: pointer;
         width: 100%;
         border-radius: 5px;
-    } 
-
-    .signup__buttons:hover{
-        color: black;
     }
     .R-input{
         width:250px;
@@ -32,7 +28,7 @@
         outline: none;
         border:1px solid #017d87;
         box-shadow: 0 0 5px #017d87;
-        background-color: #e4c6ab;
+        background-color: #202833;
     }
     .L-input2{
         width:250px;
@@ -48,10 +44,11 @@
     }
     
     .signup__inner{
-        width: 300px;
+        width: 100%;
+        /* overflow: hidden; */
         height: 470px;
         padding: 20px;
-        background-color: #e4c6ab;
+        background-color: #202833;
         border-radius: 10px;
         position: absolute;
         top: 0;
@@ -63,5 +60,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .left{
+        width: 600px;
+        float: left;
+    }
+
+    .right{
+        margin-left: 620px;
     }
     

@@ -2,12 +2,12 @@ import React ,{useState} from 'react';
 import * as Yup from 'yup';
 import {Formik,Form} from 'formik';
 import { useNavigate} from 'react-router-dom';
-import './userLogin.css';
+import './Login.css';
 import axios from "axios";
-import env from '../settings';
-import Textfield from './Textfield';
+import env from '../../settings';
+import Textfield from '../Textfield';
 
-function UserLogin() { 
+function Login() {
     const validate = Yup.object({
         email : Yup.string().email("Must be a valid e-mail ID.").required("Email is required"),
         password : Yup.string()
@@ -23,11 +23,11 @@ function UserLogin() {
         try {
             let userData = await axios.post(`${env.api}/login`,values);
             window.localStorage.setItem("app_token",userData.data.token);
-            window.localStorage.setItem("user",userData.data.message)
+            window.localStorage.setItem("user",userData.data.name)
             setLoading(false)
             setFailure(false);
             window.alert("Successful Sign-in!")
-            navigate('/api/products')
+            navigate('/')
         } catch (error) {
             console.log(error)
             setLoading(false)
@@ -72,4 +72,4 @@ function UserLogin() {
     )
 }
 
-export default UserLogin
+export default Login

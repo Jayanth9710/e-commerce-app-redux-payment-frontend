@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
 .test__container{
     height: 100vh;
 background-color:#e4c6ab ;
@@ -70,4 +71,29 @@ color: white;
     height: 100vh;
 background-color:#e4c6ab ;
 color: white;
+}
+
+
+.home_page{
+  max-width: 1300px;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.left__title{
+  font-family: 'Rock 3D', cursive;
+  font-size: 120px;
+  color: #e56b6f;
+}
+
+.right__image{
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.home__left__content>p{
+  font-size: 20px;
+  font-style: italic;
 }

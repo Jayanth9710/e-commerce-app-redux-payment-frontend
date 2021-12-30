@@ -1,13 +1,13 @@
 .signin__container{
     height: 100vh;
-background-color:#e4c6ab ;
-color: black;
+background-color:#202833 ;
+color: white;
 }
 .signin__title{
     width: 300px;
     height: 470px;
     padding: 20px;
-    background-color: #e4c6ab;
+    background-color: #202833;
     border-radius: 10px;
     position: absolute;
     top: 0;
@@ -26,10 +26,6 @@ color: black;
     padding: 10px 17px;
     border:1px solid #171717;
     cursor: pointer;
-    width: 100%; 
+    width: 100%;
     border-radius: 5px;
-}
-
-.signin__buttons:hover{
-    color: black;
 }
