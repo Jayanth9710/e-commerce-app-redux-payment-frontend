@@ -59,7 +59,7 @@ async  function displayRazorPay () {
         return
     }
     
-    const data = await axios.post('http://localhost:4000/cart',{total})
+    const data = await axios.post('https://e-commerce-payment-redux.herokuapp.com/cart',{total})
     
     console.log(data.data)
     

@@ -29,18 +29,18 @@ const addToCartHandler = () => {
     dispatch(addToCart(singleProduct._id, qty));
     navigate("/cart");
 }
-
-const PF = "https://e-commerce-payment-redux.herokuapp.com"
+ 
+const PF = "https://e-commerce-payment-redux.herokuapp.com/"
 
     return (
         <div className='product__details'>
             {loading ? <h2>Loading...</h2> : error ? <h2>{error}</h2> : (
                 <>
                 <div className='product__details__left'>
-                {/* <div className='productImage'>
+                <div >
                 { singleProduct.files.map((e,index)=>(
-            <img className='productImage'  src={PF + e.filePath} alt={singleProduct.name}/>))}
-                </div> */}
+            <img   src={PF + e.filePath} alt={singleProduct.name}/>))}
+                </div>
                 <div className='left__info'>
                     <p className='left__name'>{singleProduct.productName}</p>
                     <p>Price: &#8377; {singleProduct.price}</p>

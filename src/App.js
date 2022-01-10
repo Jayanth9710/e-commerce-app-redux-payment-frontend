@@ -32,7 +32,7 @@ function App() {
      <Backdrop show={sideToggle} click={()=>setSideToggle(false)} /> */}
     <Routes>
       
-    <Route path="/" element={<Home/>}/>
+    <Route path="/" element={<ProductListing/>}/>
       <Route path="/account" element={<ManageAccount/>}/>
       <Route path="/register" element={<Register />}/>
       <Route path="/login" element={<Login />}/>
