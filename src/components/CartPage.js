@@ -132,10 +132,10 @@ async  function displayRazorPay () {
                     <p>{addrs}</p>
                     </div>
                 </div>
-                <div>
+                {/* <div>
                     <Link to={`/address/${user}`}><button>Select Address</button></Link>
                     
-                </div>
+                </div> */}
                 <div>
                     <button onClick={displayRazorPay}>Proceed to Checkout</button>
                 </div>

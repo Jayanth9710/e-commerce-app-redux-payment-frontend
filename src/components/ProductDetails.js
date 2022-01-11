@@ -19,6 +19,7 @@ const {id} = useParams()
 let navigate = useNavigate();
 
 useEffect(()=> {
+    console.log(id)
 if(singleProduct && id !== singleProduct._id) { 
     console.log(id)
     dispatch(getProductDetails(id))
@@ -37,10 +38,8 @@ const PF = "https://e-commerce-payment-redux.herokuapp.com/"
             {loading ? <h2>Loading...</h2> : error ? <h2>{error}</h2> : (
                 <>
                 <div className='product__details__left'>
-                <div >
                 { singleProduct.files.map((e,index)=>(
-            <img   src={PF + e.filePath} alt={singleProduct.name}/>))}
-                </div>
+            <img  key={index}  src={PF + e.filePath} alt={singleProduct.name}/>))}
                 <div className='left__info'>
                     <p className='left__name'>{singleProduct.productName}</p>
                     <p>Price: &#8377; {singleProduct.price}</p>
