@@ -14,7 +14,7 @@ const ProductDetails = () => {
 
 const productDetails = useSelector(state => state.getProductDetails);
 const {loading, error, singleProduct} = productDetails;
- 
+ console.log(singleProduct);
 const {id} = useParams()
 let navigate = useNavigate();
 
@@ -38,8 +38,8 @@ const PF = "https://e-commerce-payment-redux.herokuapp.com/"
             {loading ? <h2>Loading...</h2> : error ? <h2>{error}</h2> : (
                 <>
                 <div className='product__details__left'>
-                { singleProduct.files.map((e,index)=>(
-            <img  key={index}  src={PF + e.filePath} alt={singleProduct.name}/>))}
+                {/* { singleProduct.files.map((e,index)=>(
+            <img  key={index}  src={PF + e.filePath} alt={singleProduct.name}/>))} */}
                 <div className='left__info'>
                     <p className='left__name'>{singleProduct.productName}</p>
                     <p>Price: &#8377; {singleProduct.price}</p>
