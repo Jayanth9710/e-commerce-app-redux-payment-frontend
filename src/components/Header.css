@@ -16,11 +16,13 @@
     color: greenyellow;
     font-size: 1.4rem;
     cursor: pointer;
+    margin-left: 3%;
 }
 .header__links{
     display: flex;
     list-style: none;
     align-items: center;
+    margin-right: 3%;
 }
 
 .header__links > li{

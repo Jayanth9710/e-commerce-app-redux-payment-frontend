@@ -67,6 +67,12 @@
     opacity: 0.9;
 }
 
+.guest_Login{
+    background-color: #355070;
+    color: #fff;
+    font-family: monospace;
+}
+
 @media (max-width:1320px){
     .cartpage{
         max-width: 900px;

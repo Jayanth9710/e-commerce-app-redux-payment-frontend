@@ -10,6 +10,7 @@ import { Tooltip } from '@mui/material';
 function Header({click}) {
     let navigate = useNavigate();
   const role =  window.localStorage.getItem("role")
+  const user =  window.localStorage.getItem("user")
     const cart = useSelector(state => state.cart );
     const {cartItems} = cart;
 
@@ -30,8 +31,8 @@ function Header({click}) {
         <Link to='/cart' className='cart__link'>
           <i className='fas fa-shopping-cart'></i>
           <span>
-          Cart 
-          <span className='cartlogo__badge'>{getCartCount()}</span>
+          Cart{user === null ? '' : <span className='cartlogo__badge'>{getCartCount()}</span> } 
+         
           </span>
          
         </Link>

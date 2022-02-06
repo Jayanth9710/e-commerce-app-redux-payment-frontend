@@ -114,8 +114,11 @@ async  function displayRazorPay () {
         console.log(user)
         
     return (
-        
-        <div className='cartpage'>
+        <>
+        {user === null ? (<div className='guest_Login'>
+            <h2>Please Log In Before Checking Out</h2>
+        </div>): (
+            <div className='cartpage'>
             <div className='cartpage__left'>
                 <h2>Shopping Cart</h2>
               {cartItems.length === 0 ? (
@@ -144,6 +147,9 @@ async  function displayRazorPay () {
                 </div>
             </div>
         </div>
+        )}
+        
+        </>
     )
 }
 
