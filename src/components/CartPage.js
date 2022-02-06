@@ -50,7 +50,7 @@ function loadScript (src) {
     })
 }
 
-const __DEV__ = document.domain === 'https://e-commerce-payment-redux.herokuapp.com/cart'
+const __DEV__ = document.domain === 'https://mern-stack-e-commerce.netlify.app/cart'
 async  function displayRazorPay () {
     const res = await loadScript ('https://checkout.razorpay.com/v1/checkout.js')
     
