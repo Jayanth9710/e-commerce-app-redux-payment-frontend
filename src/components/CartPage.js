@@ -8,6 +8,9 @@ import {Link} from 'react-router-dom'
 import { addToCart } from '../redux/actions/cartActions';
 import { removeFromCart } from '../redux/actions/cartActions';
 import axios from 'axios'
+import dotenv from 'dotenv';
+
+require('dotenv').config()
 
 const CartPage = () => {
 const dispatch= useDispatch();
@@ -50,7 +53,7 @@ function loadScript (src) {
     })
 }
 
-const __DEV__ = document.domain === 'https://mern-stack-e-commerce.netlify.app/cart'
+// const __DEV__ = document.domain === 'https://mern-stack-e-commerce.netlify.app/cart'
 async  function displayRazorPay () {
     const res = await loadScript ('https://checkout.razorpay.com/v1/checkout.js')
     
@@ -64,7 +67,7 @@ async  function displayRazorPay () {
     console.log(data.data)
     
             const options = {
-                key: __DEV__ ? 'rzp_test_Pa1nNOyziSCFKL' : 'PRODUCTION_KEY', // Enter the Key ID generated from the Dashboard
+                key:process.env.REACT_RAZOR_PAY_KEY, // Enter the Key ID generated from the Dashboard
                 amount: total, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
                 currency: data.data.currency,
                 name: "Squish & Mush",
