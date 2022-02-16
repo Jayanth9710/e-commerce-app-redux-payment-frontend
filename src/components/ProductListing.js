@@ -19,14 +19,14 @@ function ProductListing() {
     <div className="products__page">
     <div className="product__listing">
       <h2 className="title">Latest Prodcuts</h2>
-    <div className="products">
+    <div className="products" style={{marginTop:'5%'}}>
       {loading ? (
         <h2>Loading...</h2>
       ) : error ? (
         <h2>{error}</h2>
       ) : (
         products.map((product) => 
-          <ProductComponent key={product._id} productId={product._id} name={product.productName} price={product.price} description={product.description} files={product.files} />)
+          <ProductComponent  key={product._id} productId={product._id} name={product.productName} price={product.price} description={product.description} files={product.files} />)
         
       )}
     </div>
