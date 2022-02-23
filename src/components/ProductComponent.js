@@ -35,8 +35,8 @@ const ProductComponent =({files,name,price,description,productId,countInStock})=
         </div>
       </div>
 
-      <div className='card-footer p-4 pt-0 border-top-0  '>
-        <div className='text-center'>
+      <div className='card-footer' >
+        <div className='text-center' >
           <Link to={`/api/product/${productId}`}>
           <button className='text-center btn  btn-outline-dark mt-auto'>View Product</button>
           </Link>
