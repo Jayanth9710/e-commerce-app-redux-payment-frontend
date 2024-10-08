@@ -9,6 +9,7 @@ import { addToCart } from '../redux/actions/cartActions';
 import { removeFromCart } from '../redux/actions/cartActions';
 import axios from 'axios'
 import dotenv from 'dotenv';
+import env from "../settings";
 
 require('dotenv').config()
 
@@ -62,7 +63,7 @@ async  function displayRazorPay () {
         return
     }
     
-    const data = await axios.post('https://e-commerce-payment-redux.herokuapp.com/cart',{total})
+    const data = await axios.post(`${env.api}/cart`,{total})
     
     console.log(data.data)
     
